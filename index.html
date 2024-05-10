@@ -11,27 +11,31 @@
     <div class="page-container flex-container">
         <div class="sidebar">
             <img class="bg-img" src="./resources/etienne-swanepoel-7nr57LTKmKY-unsplash.jpg">
-            <div class="logo-bg">
+            <div class="logo-bg flex-container">
                 <img class="logo" src="./resources/odin-lined.png" alt="">
-                <h1 class="logo-title">ODIN</h1>
+                <h1 class="logo-title viking">ODIN</h1>
             </div>
         </div>
         
         <div class="content flex-container flex-column">
-            <div class="content-head flex">
-                <h1>Content Head</h1>
+            <div class="content-head flex-container">
+                <div class="">
+                    <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque expedita maxime quaerat, debitis sit similique aliquid, pariatur est velit hic quam voluptas nisi molestias! Illo dolorem accusantium ex eligendi sapiente?</h1>
+                </div>
             </div>
             <div class="content-body flex33">
-                
-                <form action="" class="flex-container flex-column justify-center align-center">
+                <div>
+                    <p class="form-head">Fill the form please</p>
+                </div>
+                <form action="" class="flex-container flex-column ">
                     <div class="flex-container">
                         <div class="label">
                             <div><label for="">FIRST NAME</label></div>
-                            <input type="text">
+                            <input type="text" minlength="5" required>
                         </div>
                         <div class="label">
                             <div><label for="">LAST NAME</label></div>
-                            <input type="text">
+                            <input type="text" minlength="5" required>
                         </div>
                     </div>
                 
@@ -39,11 +43,11 @@
                     <div class="flex-container">
                         <div class="label">
                             <div><label for="">EMAIL</label></div>
-                            <input type="text">
+                            <input type="email" minlength="5" required>
                         </div>
                         <div class="label">
                             <div><label for="">PHONE NUMBER</label></div>
-                            <input type="text">
+                            <input type="text" minlength="5" required>
                         </div>
                     </div>
                 
@@ -51,18 +55,18 @@
                     <div class="flex-container">
                         <div class="label">
                             <div><label for="">PASSWORD</label></div>
-                            <input type="text">
+                            <input type="password" minlength="5" required>
                         </div>
                         <div class="label">
-                            <div><label for="">CONFIRM NUMBER</label></div>
-                            <input type="text">
+                            <div><label for="">CONFIRM PASSWORD</label></div>
+                            <input type="password" minlength="5" required>
                         </div>
                     </div>
-                    <button type="submit">submit</button>
                 </form>
             </div>
             <div class="content-foot flex">
-                create account
+                <div class="flex">
+                    <button type="submit" class="btn">Create account</button></div>
             </div>
         </div>
     </div>

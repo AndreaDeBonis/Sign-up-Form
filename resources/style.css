@@ -1,29 +1,27 @@
 * {
     box-sizing: border-box;
+    font-family: system-ui;
 }
 
 @font-face {
     font-family: viking;
     src: url(./Norse-Bold.otf) ;
 }
-/* .sidebar {
-    position: relative;
-    width: 35vi;
-    height: 100vi;
-} */
-.page-container {
 
+.page-container {
+    display: flex;
 }
 
 .sidebar {
-    width: 35vi;
+    width: 30vi;
     height: 100vh;
+    flex: 1;
 }
 
 .bg-img {
     width: inherit;
     height: inherit;
-    object-fit: cover;
+    object-fit:cover;
 }
 
 
@@ -32,16 +30,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 30vh;
+    top: 20vh;
     width: inherit;
     height: 15vh;
     background:rgba(34, 109, 105, 0.5);
+}
+
+.viking {
     font-family: viking;
 }
 
 .logo {
-     height: 90%;
-    
+    max-height: 90%;
 }
 
 .logo-title {
@@ -51,15 +51,14 @@
 
 
 .content {
-    /* justify-content: space-between; */
-    /* align-items: center; */
     width: 100%;
+    height: 100%;
     background-color: rgb(230, 240, 240);
     color: black;
 }
 
 .content-head {
-
+    padding: 5% 7% 5% 7%;
 }
 
 .content-body {
@@ -68,7 +67,7 @@
 }
 
 .content-foot {
-   
+    padding: 5% 7% 4% 7%;
 }
 
 .flex-container {
@@ -96,13 +95,56 @@
 }
 
 .label {
-    padding: 1.5rem;
+    padding: 1.5rem 1.5rem 1.5rem 0;
+    font-weight: bold;
+    color: rgb(95, 95, 95)
+}
+
+.form-head {
+    padding-left: 7%;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.btn {
+    padding: 1rem;
+    outline: none;
+    border-radius: 10px;
+    border: 3px solid rgba(34, 109, 105, 1);
+    background-color: rgba(34, 109, 105, 1);
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn:active {
+    background-color: rgba(34, 109, 105, 0);
+    color: rgb(0, 0, 0);
+}
+
+form {
+    padding-left: 7%;
+    padding-bottom: 5%;
 }
 
 input {
-    margin: 1rem 0rem 1rem 0rem;
+    margin: 1rem 0rem 0rem 0rem;
+    border: 1.5px solid rgb(211, 211, 211);
+    border-radius: 5px;
+    outline: none;
+    padding: 5px;
 }
 
-input:hover {
-    border-color: blue;
+input:focus {
+    border: 1.5px solid blue;
+    box-shadow: 1.5px 1.5px 5px rgb(201, 201, 201);
+}
+
+input:focus:valid {
+    border: 1.5px solid rgb(60, 255, 0);
+}
+
+input[type="password"]:focus:invalid {
+    border: 1.5px solid rgb(255, 0, 0);
 }
