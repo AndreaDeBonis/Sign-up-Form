@@ -11,14 +11,19 @@
     width: 35vi;
     height: 100vi;
 } */
+.page-container {
 
-.bg-img {
-    position: absolute;
-    float: left;
+}
+
+.sidebar {
     width: 35vi;
     height: 100vh;
+}
+
+.bg-img {
+    width: inherit;
+    height: inherit;
     object-fit: cover;
-    
 }
 
 
@@ -28,7 +33,7 @@
     justify-content: center;
     align-items: center;
     top: 30vh;
-    width: 35vi;
+    width: inherit;
     height: 15vh;
     background:rgba(34, 109, 105, 0.5);
     font-family: viking;
@@ -39,9 +44,65 @@
     
 }
 
+.logo-title {
+    font-size: 4rem;
+    color: white;
+}
 
 
 .content {
-    position: absolute;
-    left: 36vi;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    width: 100%;
+    background-color: rgb(230, 240, 240);
+    color: black;
+}
+
+.content-head {
+
+}
+
+.content-body {
+    background-color: white;
+    
+}
+
+.content-foot {
+   
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex {
+    flex: 1 1 auto;
+}
+
+.flex33 {
+    flex: 1 1 33%;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.label {
+    padding: 1.5rem;
+}
+
+input {
+    margin: 1rem 0rem 1rem 0rem;
+}
+
+input:hover {
+    border-color: blue;
 }
